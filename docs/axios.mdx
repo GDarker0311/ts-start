@@ -1,0 +1,23 @@
+---
+name: Axios
+---
+
+import request from '../libs/axios.ts'
+
+# Request
+
+export const TEST: AxiosInterface = {
+  baseURL: 'http://localhost:3000',
+  url: '/test',
+  method: 'get'
+}
+
+const clickHandle = async () => {
+  // 请求TEST接口
+  const [response, error] = await request(TEST, {});
+  if (response) {
+    console.log(response.data);
+  }else {
+    console.log(JSON.stringify(error));
+  }
+}

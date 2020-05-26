@@ -1,0 +1,14 @@
+---
+name Tools
+---
+
+import Tools from "../libs/tools.ts"
+
+const env = Tools.environment();
+if (env === 2) {
+  console.log("生产环境");
+}else if (env === 0) {
+  console.log("本地开发");
+}else {
+  console.log("开发环境：", env);
+}
