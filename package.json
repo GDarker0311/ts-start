@@ -1,6 +1,6 @@
 {
   "name": "@ctrip/react-libs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "corp tools",
   "main": "./index.js",
   "scripts": {

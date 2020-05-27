@@ -4,8 +4,8 @@ module.exports = {
   mode: 'production',
   entry: './libs/index.ts',
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname),
+    filename: 'react-libs.js',
+    path: path.resolve(__dirname, 'dist'),
     library: 'reactLibs',
     libraryTarget: 'umd'
   },
