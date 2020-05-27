@@ -1,8 +1,8 @@
 {
   "name": "@ctrip/react-libs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "corp tools",
-  "main": "dist/react-libs.js",
+  "main": "./libs/index.ts",
   "scripts": {
     "test": "jest --config jest.config.js --no-cache",
     "lint": "npx node-vampire-lint",
@@ -40,6 +40,7 @@
     "@babel/preset-typescript": "^7.9.0",
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "jest": "^26.0.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"

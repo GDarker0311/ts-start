@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     ['@babel/plugin-transform-runtime', {
       corejs: 3
-    }]
+    }],
+    '@babel/plugin-transform-modules-commonjs'
   ]
 };

@@ -2,15 +2,15 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './index.js',
+  entry: './libs/index.ts',
   output: {
-    filename: 'react-libs.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js',
+    path: path.resolve(__dirname),
     library: 'reactLibs',
     libraryTarget: 'umd'
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.js']
   },
   module: {
     rules: [{

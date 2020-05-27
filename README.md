@@ -4,14 +4,13 @@
 
 ## 安装
 
-使用npm ```npm install @ctrip/react-libs```
-
-使用yarn ```yarn add @ctrip/react-libs```
+```npm install @ctrip/react-libs```
 
 ## 使用
 
 ### Axios
 
+单独引用
 ```typescript
 import { Axios } from "@ctrip/react-libs"
 
@@ -33,6 +32,27 @@ const clickHandle = async () => {
 
 ```
 
+整体引用
+```typescript
+import * as reactLibs from "@ctrip/react-libs"
+
+const TEST = {
+  baseURL: 'http://localhost:3000',
+  url: '/test',
+  method: 'get'
+}
+
+const clickHandle = async () => {
+  // 请求TEST接口
+  const [response, error] = await reactLibs.Axios(TEST, {});
+  if (response) {
+    console.log(response.data);
+  }else {
+    console.log(JSON.stringify(error));
+  }
+}
+```
+
 ### Log
 
 ```typescript
@@ -52,11 +72,18 @@ Log.logException({ value: logException_test }, {
 
 ```
 
+整体引用参考Axios
+
 ### Trace
 ```typescript
 import { Trace } from "@ctrip/react-libs"
 
-Trace.trackMetric({ value: "test" });
+let params = {
+  trackKey: "12345",
+  trackValue: 1,
+  trackTagType: "click"
+}
+Trace.trackMetric(params);
 
 Trace.trackPage({
   pageId: "10650036267",
@@ -75,3 +102,5 @@ let param = {
 };
 Trace.trackLog(param);
 ```
+
+整体引用参考Axios
