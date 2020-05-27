@@ -1,5 +1,4 @@
-import { Tools } from "../index";
-// import * as reactLibs from "../index"
+import { Tools } from "../libs/index";
 
 test("Tools test", () => {
   expect(Tools.environment()).toBe(0);

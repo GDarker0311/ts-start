@@ -1,5 +1,5 @@
-import axios from "./axios";
-import tools from "./tools";
+import axios from "../axios/axios";
+import tools from "../tools/tools";
 
 interface LogTagsInterface {
   M?: string,
