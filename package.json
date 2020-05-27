@@ -1,8 +1,8 @@
 {
   "name": "@ctrip/react-libs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "corp tools",
-  "main": "./libs/index.ts",
+  "main": "./index.js",
   "scripts": {
     "test": "jest --config jest.config.js --no-cache",
     "lint": "npx node-vampire-lint",
