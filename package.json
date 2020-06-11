@@ -1,30 +1,24 @@
 {
-  "name": "@ctrip/react-libs",
-  "version": "0.0.5",
-  "description": "corp tools",
+  "name": "ts-start",
+  "version": "0.0.1",
+  "description": "ts",
   "main": "./index.js",
   "scripts": {
     "test": "jest --config jest.config.js --no-cache",
-    "lint": "npx node-vampire-lint",
-    "lint:fix": "npx node-vampire-lint --fix",
     "build": "webpack-cli --config webpack.config.js",
     "prepublishOnly": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.dev.sh.ctripcorp.com:hotel-front/react-libs.git"
+    "url": "git@github.com:GDarker0311/ts-start.git"
   },
   "keywords": [
-    "tools",
-    "axios",
-    "log",
-    "tracelog"
+    "axios"
   ],
-  "author": "wenbin.zhang",
+  "author": "jianyuguo",
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.9.6",
-    "@ctrip/node-vampire-lint": "^1.0.26",
     "@types/jest": "^25.2.3",
     "@types/lodash": "^4.14.152",
     "@types/node": "^14.0.5",
