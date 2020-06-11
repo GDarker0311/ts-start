@@ -1,6 +1,6 @@
-# react-libs
+# ts-start
 
-商旅前端公共方法库，typescript。
+ts起步，typescript。
 
 ## 安装
 
